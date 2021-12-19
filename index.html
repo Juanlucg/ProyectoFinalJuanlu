@@ -1,60 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <link href="./css/style.css" rel="stylesheet" type="text/css">
+<head >
+  <meta name="viewport" content="initial-scale=1">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
   <title>Supermercado Juanlu</title>
   <meta charset="UTF-8">
-  <script src="./js/claseCaja.js" ></script>
-  <script src="./js/claseCliente.js" ></script>
-  <script src="./js/funciones.js" ></script>
+  <script src="js/a.js" ></script>
 
 </head>
 
 <body>
-
+  <div id="fondo"> </div>
   <header>
     <h1>SUPERMERCADO</h1>
+    <div id="contenedorlogo"><img src="css/logo.png" id="logo"> </div>
   </header>
 
-  <main>
-    <div class="botonClientes" id="botonClientes" onclick="crearCliente(contador)" >Clientes: <span id="contadorClientes"></span></div>
-    <div class = "wrapper">
-      <section id="zonacajas">
-        <div class="caja" id="caja1" onclick="procesoCaja(caja1)"><p>CAJA1. Clientes esperando:<span id="contadorCaja1"></span></p></div>
-        <div class="caja" id="caja2" onclick="procesoCaja(caja2)"><p>CAJA2. Clientes esperando:<span id="contadorCaja2"></span></p></div>
-        <div class="caja" id="caja3" onclick="procesoCaja(caja3)"><p>CAJA3. Clientes esperando:<span id="contadorCaja3"></span></p></div>
-        <div class="caja" id="caja4" onclick="procesoCaja(caja4)"><p>CAJA4. Clientes esperando: <span id="contadorCaja4"></span></p></div>
-      </section>
-    
-      <section id="zonaPantalla">
-        <div  id="pantallaConsola">
+  <section id="zonacajas">
+    <div class="caja" id="caja1"><p>CAJA1. Clientes esperando:<span id="contadorCaja1"></span></p></div>
+    <input type="button" id="Bcaja1" value ="Agregar Cliente" onclick="agregarCliente()">
 
-        </div>
-        <form>
-          <input type="text" name="enter" id="enter" />
-          <input type="button" name="enviar" value="Enviar" id="enviar" />
-        </form>
-      </section>
-    </div>
-    
-    <script>
-      let caja1 = new caja(1);
-      let caja2 = new caja(2);
-      let caja3 = new caja(3);
-      let caja4 = new caja(4);
-      let cajas = new Array(caja1, caja2, caja3, caja4);
-      let contador = parseInt(document.getElementById("contadorClientes").innerHTML);
-      document.getElementById("contadorClientes").innerHTML = 0;
-    </script>
-  </main>
+    <div class="caja" id="caja2"><p>CAJA2. Clientes esperando:<span id="contadorCaja2"></span></p></div>
+    <input type="button" id="Bcaja2" value ="Agregar Cliente" onclick="agregarCliente1()">
 
-  <footer>
-  
-  </footer>
-  
-  
+    <div class="caja" id="caja3"><p>CAJA3. Clientes esperando:<span id="contadorCaja3"></span></p></div>
+    <input type="button" id="Bcaja3" value ="Agregar Cliente" onclick="agregarCliente2()">
 
+    <div class="caja" id="caja4"><p>CAJA4. Clientes esperando: <span id="contadorCaja4"></span></p></div>
+    <input type="button" id="Bcaja4" value ="Agregar Cliente" onclick="agregarCliente3()">
+    <br><br>
+    <input type="text" id="texto"><input type="button" id="Btexto" value ="Enviar" onclick="comprobarcomando()">
+  </section>
+  <div id="botones" class="botones"> 
+    <div><input type="button" id="botonMostrar" value ="Poner fondo" onclick="ponerFondo()"></div>
+    <div><input type="button" id="botonQuitar" value ="Quitar fondo" onclick="quitarFondo()"></div>
+  </div>
+  
+  <script>
+    var contador = 0;
+    var contador1 = 0;
+    var contador2 = 0;
+    var contador3 = 0;
+  </script>
 </body>
 
 </html>
