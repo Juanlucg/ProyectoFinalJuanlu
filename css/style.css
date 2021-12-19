@@ -2,25 +2,9 @@
   body{
     width: 100%;
     height: 100%;
+    margin:0;
   }
-  
-  header{
-    background: #000000;
-    color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 10%;
-    height: 10%;
-    border-radius: 20px;
-  }
-  
-}
-body{
-  width: 100%;
-  height: 100%;
-}
-#fondo {
+  #fondo {
     background-image: url(fondo.jpeg);
     background-size: cover;
   background-repeat:no-repeat;
@@ -30,66 +14,238 @@ body{
   z-index: -1;
   position: fixed;
 }
-
-header{
-  background: #6cddff;
-  color: #FFFFFF;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50rem;
-  height: 10rem;
-  border-radius: 20px;
+h1{
+  margin-left: 1%;
 }
-#contenedorlogo {
-  width: 50%; 
-  height: 80%;
+  header{
+    background: #6cddff;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 20%;
+    border-radius: 20px;
+    margin-top: 2%;
+    margin-left: 5%;
   }
-#logo {
-width: 50%;
-height: 100%;
-float: right;
-border-radius: 20px;
+  #contenedorlogo {
+    width: 50%; 
+    height: 80%;
+    }
+  #logo {
+  width: 100%;
+  height: 100%;
+  float: right;
+  border-radius: 20px;
+  }
+  #zonacajas {
+    color: #ffffff;
+    background-color: #98a7ff;
+    width: 90%;
+    height: 50%;
+    overflow: hidden;
+    margin: 0vh 1vw 10vh 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 1/3  ;
+    grid-row: 1/4;
+    border-radius: 15px;
+    margin: 0.3rem 0.3rem;
+    margin-left: 5%;
+  }
+  
+  .caja {
+    background-color: #ffc082;
+    border-style:solid;
+    border-width:1%;
+    border-color:white;
+    margin:4%;
+    width: 70%;
+    height: 5%;
+    border-radius: 15px;
+  
+  }
+  .botones {
+    border-radius: 15px;
+    margin-left: 31%;
+  }
+  input[type=button],[type=text]  {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 15px;
+  }
 }
-
-#zonacajas {
-  color: #ffffff;
-  background-color: #98a7ff;
-  width: 50rem;
-  height: 50rem;
-  overflow: hidden;
-  margin: 0vh 1vw 10vh 1vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  grid-column: 1/3  ;
-  grid-row: 1/4;
-  border-radius: 15px;
-  margin: 0.3rem 0.3rem;
+@media only screen and (max-width: 1024px) {
+  body{
+    width: 100%;
+    height: 100%;
+    margin:0;
+  }
+  #fondo {
+    background-image: url(fondo.jpeg);
+    background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: fixed;
 }
-
-.caja {
-  background-color: #ffc082;
-  border-style:solid;
-  border-width:1%;
-  border-color:white;
-  margin:4%;
-  width: 55%;
-  height: 5%;
-  border-radius: 15px;
-
+h1{
+  margin-left: 1%;
 }
-.botones {
-  border-radius: 15px;
-  float:right;
+  header{
+    background: #6cddff;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 20%;
+    border-radius: 20px;
+    margin-top: 2%;
+    margin-left: 5%;
+  }
+  #contenedorlogo {
+    width: 50%; 
+    height: 80%;
+    }
+  #logo {
+  width: 30%;
+  height: 100%;
+  float: right;
+  border-radius: 20px;
+  }
+  #zonacajas {
+    color: #ffffff;
+    background-color: #98a7ff;
+    width: 90%;
+    height: 50%;
+    overflow: hidden;
+    margin: 0vh 1vw 10vh 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 1/3  ;
+    grid-row: 1/4;
+    border-radius: 15px;
+    margin: 0.3rem 0.3rem;
+    margin-left: 5%;
+  }
+  
+  .caja {
+    background-color: #ffc082;
+    border-style:solid;
+    border-width:1%;
+    border-color:white;
+    margin:4%;
+    width: 70%;
+    height: 5%;
+    border-radius: 15px;
+  
+  }
+  .botones {
+    border-radius: 15px;
+    margin-left: 41%;
+  }
+  input[type=button],[type=text]  {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 15px;
+  }
 }
-input[type=button],[type=text]  {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 15px;
-}
-
+@media only screen and (min-width: 1024px) {
+    body{
+      width: 100%;
+      height: 100%;
+      margin:0;
+    }
+    h1{
+      margin:0;
+    }
+    #fondo {
+        background-image: url(fondo.jpeg);
+        background-size: cover;
+      background-repeat:no-repeat;
+      background-position: center;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: fixed;
+    }
+    
+    header{
+      background: #6cddff;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50rem;
+      height: 10rem;
+      border-radius: 20px;
+    }
+    #contenedorlogo {
+      width: 50%; 
+      height: 80%;
+      }
+    #logo {
+    width: 50%;
+    height: 100%;
+    float: right;
+    border-radius: 20px;
+    }
+    
+    #zonacajas {
+      color: #ffffff;
+      background-color: #98a7ff;
+      width: 50rem;
+      height: 50rem;
+      overflow: hidden;
+      margin: 0vh 1vw 10vh 1vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      grid-column: 1/3  ;
+      grid-row: 1/4;
+      border-radius: 15px;
+      margin: 0.3rem 0.3rem;
+    }
+    
+    .caja {
+      background-color: #ffc082;
+      border-style:solid;
+      border-width:1%;
+      border-color:white;
+      margin:4%;
+      width: 55%;
+      height: 5%;
+      border-radius: 15px;
+    
+    }
+    .botones {
+      border-radius: 15px;
+      float:right;
+    }
+    input[type=button],[type=text]  {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 15px;
+    }
+    
+    
+  }
+  
